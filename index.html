@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>New page design</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<link href='https://fonts.googleapis.com/css?family=Roboto:400,500,300,700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="js/demo.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="js/flexslider.css" type="text/css" media="screen" />
+		<link rel="stylesheet" type="text/css" href="menu/css/menumaker.css">
+		<link href="style.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<section class="header-container">
+			<header>
+				<a href="logo" class="logo">logo </a>
+				<nav>
+					<ul class="top-menu">
+						<li><a href="#"> Account  </a></li>
+						<li><a href="#"> Sign In </a></li>
+						<li><a href="#"> Personal </a></li>
+						<li><a href="#"> Sign Up </a></li>
+					</ul>
+					<div class="clearfix"></div>
+					<div id="cssmenu" class="m-t-20">
+						<ul>
+							<li><a href="#">Home</a></li>
+							<li>
+								<a href="#">Products</a>
+								<ul>
+									<li><a href="#">Widgets</a></li>
+									<li>
+										<a href="#">Widgets 2</a>
+										<ul>
+											<li><a href="#">Plugins</a></li>
+											<li><a href="#">Extensions</a></li>
+											<li><a href="#">Modules</a></li>
+										</ul>
+									</li>
+									<li><a href="#">Support</a></li>
+									<li><a href="#">Another Widget</a></li>
+								</ul>
+							</li>
+							<li><a href="#">About</a></li>
+							<li><a href="#">Contact</a></li>
+							<li><a href="#">About</a></li>
+							<li><a href="#">Contact</a></li>
+							
+						</ul>
+					</div>
+				</nav>
+				<div class="clearfix"></div>
+			</header>
+		</section>
+		<section class="banner-container">
+			<div class="flexslider">
+				<ul class="slides">
+					<li> <img src="img/1.jpg" height="250" /> </li>
+					<li> <img src="img/1.jpg" height="250" /> </li>
+				</ul>
+			</div>
+		</section>
+		<section class="content-container m-t-20">
+			<article class="page">
+				<header>
+					<h1>consectetur adipisicing elit</h1>
+					<p>    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					
+					<h2 class="m-t-20  m-b-10">consectetur adipisicing elit</h2>
+					
+					<p>    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					
+					
+					<h3 class="m-t-20 m-b-10">consectetur adipisicing elit</h3>
+					
+					<p>    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					
+					
+				</header>
+				
+				
+			</article>
+		</section>
+		<footer>
+			<section class="page">
+				<aside>
+					<ul class="foot-menu">
+						<li><a href="#"> Home  </a></li>
+						<li><a href="#"> About </a></li>
+						<li><a href="#"> Personal </a></li>
+						<li><a href="#"> Sign Up </a></li>
+						<li><a href="#"> Personal </a></li>
+						<li><a href="#"> Sign Up </a></li>
+					</ul>
+				</aside>
+				<aside>
+					<ul class="foot-menu">
+						<li><a href="#"> Home  </a></li>
+						<li><a href="#"> About </a></li>
+						<li><a href="#"> Personal </a></li>
+						<li><a href="#"> Sign Up </a></li>
+						<li><a href="#"> Personal </a></li>
+						<li><a href="#"> Sign Up </a></li>
+					</ul>
+				</aside>
+				<aside>
+					<ul class="foot-menu">
+						<li><a href="#"> Home  </a></li>
+						<li><a href="#"> About </a></li>
+						<li><a href="#"> Personal </a></li>
+						<li><a href="#"> Sign Up </a></li>
+						<li><a href="#"> Personal </a></li>
+						<li><a href="#"> Sign Up </a></li>
+					</ul>
+				</aside>
+			</section>
+		</footer>
+		<!-- jQuery -->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<!-- FlexSlider -->
+		<script defer src="js/jquery.flexslider.js"></script>
+		<script src="menu/js/menumaker.js"></script>
+		<script type="text/javascript">
+			$("#cssmenu").menumaker({
+				title: "Menu",
+				format: "multitoggle"
+			});
+		</script>
+		<script type="text/javascript">
+		$(window).load(function(){
+		$('.flexslider').flexslider({
+			animation: "slide", // fade
+			directionNav:false,
+			start: function(slider){
+			$('body').removeClass('loading');
+			}
+		});
+		});
+		</script>
+	</body>
+</html>
